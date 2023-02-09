@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BlackWhite</title>
+</head>
+<body>
+
+
+
+ <input type="radio" name="mod" id="yes" >Black<br>
+ <input type="radio" name="mod" id="no" >White<br>
+ <input type="button" value="Change Color" onclick="renkdegis()">
+
+
+<script type="text/javascript">
+function renkdegis(){
+ if(document.getElementById("yes").checked==true){
+ document.getElementsByTagName("body")[0].style.backgroundColor="black";
+ document.getElementsByTagName("body")[0].style.color="white"
+ }
+ else{
+ document.getElementsByTagName("body")[0].style.backgroundColor="white";
+ document.getElementsByTagName("body")[0].style.color="black"
+ }
+}
+
+
+</script>
+</body>
+</html>
